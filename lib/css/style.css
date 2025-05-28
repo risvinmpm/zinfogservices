@@ -248,11 +248,6 @@ body {
 	background-color:#fff;
 }
 
-.nine_section .twelvecol {
-	display: flex;
-	justify-content: center;
-}
-
 .align_center{
 	text-align:center;
 }
@@ -1320,7 +1315,7 @@ span.testimonials_img{
 span.testimonials_text, span.testimonials_autor{
 	display:block;
 	color:#fff;
-	font-size:32px!important;
+	font-size:16px!important;
 	line-height:48px!important;
 	font-weight:400;
 }
