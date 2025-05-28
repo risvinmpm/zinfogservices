@@ -49,8 +49,8 @@
                         <!--begin twelvecol -->
                         <div class="twelvecol">
                             <!--begin logo -->
-                            <a href="index.html" id="logo"><img src="lib/images/logo.svg" width="150px"
-                                    height="50px" alt="" /></a>
+                            <a href="index.html" id="logo"><img src="lib/images/logo.svg" width="150px" height="50px"
+                                    alt="" /></a>
                             <!--end logo -->
 
                             <!--begin purchase button -->
@@ -91,15 +91,58 @@
             <!--begin home section -->
             <section id="home">
                 <div class="home_box bounce_fade">
-                    <span class="slider_text1">Create & share beautiful landing pages with our amazing custom
-                        template.</span>
+                    <!--begin nine_section -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="twelvecol two-column-wrapper">
 
-                    <span class="slider_text2">We want to make your word beautiful. You can use our love &
-                        passion!</span>
+                                <!-- Left Column -->
+                                <div class="sixcol left-column">
+                                    <div>
+                                        <span class="slider_text1">Master Odoo with Expert-Led Training – Online or In Your Office</span>
+                                        <span class="slider_text2">We want to make your Odoo training experience beautiful. You can count on our love and passion!</span>
+                                        <a href="#" class="slider_text3"><i class="fa fa-download"></i>&nbsp; Download Brochure</a>
+                                        <a href="#" class="slider_text4">Discover more</a>
+                                    </div>
+                                </div>
 
-                    <a href="#" class="slider_text3"><i class="fa fa-apple"></i>&nbsp; Download app</a>
+                                <!-- Right Column -->
+                                <div class="sixcol right-column">
+                                    <section id="contact">
+                                        <div class="contact-box">
+                                            <h2>Contact</h2>
+                                            <p class="contact-lead">Interested in a joint project?</p>
+                                            <p>Write to me directly or call me – I look forward to exciting ideas!</p>
+                                            <form class="contact-form" method="POST" action="#contact" id="contactForm">
+                                                <div class="form-item">
+                                                    <label for="contact-name">Full Name</label>
+                                                    <input id="contact-name" name="name" type="text" required>
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="contact-email">E-Mail</label>
+                                                    <input id="contact-email" name="email" type="email" required>
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="contact-subject">Subject</label>
+                                                    <input id="contact-subject" name="subject" type="text" required>
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="contact-message">Message</label>
+                                                    <textarea id="contact-message" name="message" rows="4"
+                                                        required></textarea>
+                                                </div>
+                                                <input type="hidden" name="g-recaptcha-response"
+                                                    id="g-recaptcha-response">
+                                                <button class="form-button" type="submit">Send Message</button>
+                                            </form>
+                                        </div>
+                                    </section>
+                                </div>
 
-                    <a href="#" class="slider_text4">Discover more</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             <!--end home section -->
@@ -158,52 +201,6 @@
                                 functional experts are highly sought-after across industries —
                                 offering lucrative career paths both in India and globally.
                             </p>
-
-                            <!--begin sixcol -->
-                            <!-- <div class="sixcol">
-                  <ul>
-                    <li>
-                      <i class="fa fa-check grey"></i> &nbsp; Sed ut
-                      perspiciatis und lorem omnis iste.
-                    </li>
-                    <li>
-                      <i class="fa fa-check grey"></i> &nbsp; Nemo enim ipsam
-                      ets voluptatem quia.
-                    </li>
-                    <li>
-                      <i class="fa fa-check grey"></i> &nbsp; Solemnes fiat
-                      lorem din futurum netsum.
-                    </li>
-                    <li>
-                      <i class="fa fa-check grey"></i> &nbsp; Nemo enim ipsam
-                      ets voluptatem quia.
-                    </li>
-                  </ul>
-                </div> -->
-                            <!--end sixcol -->
-
-                            <!--begin sixcol -->
-                            <!-- <div class="sixcol last">
-                  <ul>
-                    <li>
-                      <i class="fa fa-check grey"></i> &nbsp; Sed ut
-                      perspiciatis und lorem omnis iste.
-                    </li>
-                    <li>
-                      <i class="fa fa-check grey"></i> &nbsp; Nemo enim ipsam
-                      ets voluptatem quia.
-                    </li>
-                    <li>
-                      <i class="fa fa-check grey"></i> &nbsp; Paris clarits,
-                      laris lorem netsum magnas.
-                    </li>
-                    <li>
-                      <i class="fa fa-check grey"></i> &nbsp; Nemo enim ipsam
-                      ets voluptatem quia.
-                    </li>
-                  </ul>
-                </div> -->
-                            <!--end sixcol -->
                         </div>
                         <!--end sixcol -->
 
@@ -836,12 +833,12 @@
                             <i class="fa fa-instagram fa-1x contact-icon-circle"></i>
                         </a>
                     </li>
-                     <li>
+                    <li>
                         <a href="#">
                             <i class="fa fa-facebook fa-1x contact-icon-circle"></i>
                         </a>
                     </li>
-                     <li>
+                    <li>
                         <a href="#">
                             <i class="fa fa-linkedin fa-1x contact-icon-circle"></i>
                         </a>
@@ -970,6 +967,29 @@
                     answer.style.maxHeight = answer.scrollHeight + "px";
                 } else {
                     answer.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.form-item input, .form-item textarea').forEach(input => {
+            const label = input.parentElement.querySelector('label');
+
+            input.addEventListener('focus', () => {
+                label.style.top = '-10px';
+                label.style.fontSize = '12px';
+                label.style.color = 'white';
+            });
+
+            input.addEventListener('blur', () => {
+                if (input.value.trim() === '') {
+                    if (input.tagName.toLowerCase() === 'textarea') {
+                        label.style.top = '75%';
+                    } else {
+                        label.style.top = '50%';
+                    }
+                    label.style.fontSize = '16px';
+                    label.style.color = 'white';
                 }
             });
         });
