@@ -53,6 +53,10 @@
                                     alt="" /></a>
                             <!--end logo -->
 
+                            <div class="mobile-nav-toggle" id="mobileToggle">
+                                <i class="fas fa-bars"></i>
+                            </div>
+
                             <!--begin purchase button -->
                             <a href="#footer" class="purchase">Contact us</a>
                             <!--end purchase button -->
@@ -105,7 +109,7 @@
                                             beautiful. You can count on our love and passion!</span>
                                         <a href="#" class="slider_text3"><i class="fa fa-download"></i>&nbsp; Download
                                             Brochure</a>
-                                        <a href="#" class="slider_text4">Discover more</a>
+                                        <a href="#" class="slider_text4">Train Your Team Now</a>
                                     </div>
                                 </div>
 
@@ -316,9 +320,9 @@
 
         <!-- begin testimonials_wrapper -->
         <div class="testimonials_wrapper">
-            <div class="testimonials_box bounce_fade">
+            <!-- <div class="testimonials_box bounce_fade">
                 <span class="testimonials_autor">- Zinfog’s Training Approach -</span>
-                <!-- <span class="testimonials_img"><i class="fa fa-quote-right fa-3x white"></i></span><br /> -->
+                <span class="testimonials_img"><i class="fa fa-quote-right fa-3x white"></i></span><br />
                 <span class="testimonials_text">Zinfog’s training is the opposite of one-size-fits-all. We tailor every
                     session to real business use cases, making the learning highly relevant and practical. Our
                     interactive sessions actively engage participants, ensuring they understand and apply the concepts
@@ -326,9 +330,29 @@
                     Plus, our content is customized by department and role, so every team member gets exactly what they
                     need to succeed. Typical training often misses these key elements — but at Zinfog, this approach
                     sets us apart.</span>
+            </div> -->
+             <section class="counter-section">
+            <div class="counter-box">
+                <div class="counter" data-target="300">0</div>
+                <div class="label">Teams Trained</div>
             </div>
+            <div class="counter-box">
+                <div class="counter" data-target="40">0</div>
+                <div class="label">Departments Covered</div>
+            </div>
+            <div class="counter-box">
+                <div class="counter" data-target="97">0</div>
+                <div class="label">% Satisfaction</div>
+            </div>
+            <div class="counter-box">
+                <div class="counter" data-target="5">0</div>
+                <div class="label">Industries Served</div>
+            </div>
+        </section>
         </div>
         <!-- end testimonials_wrapper -->
+
+       
 
         <!--begin info_white_wrapper -->
         <div id="services" class="info_white_wrapper">
@@ -604,7 +628,7 @@
                             </ul>
 
                             <div class="price_button_wrapper">
-                                <a href="#" class="price_button">SIGN UP NOW</a>
+                                <a href="#" class="price_button">Book a Free Demo</a>
                             </div>
 
                         </div>
@@ -625,7 +649,7 @@
                             </ul>
 
                             <div class="price_button_wrapper">
-                                <a href="#" class="price_button">SIGN UP NOW</a>
+                                <a href="#" class="price_button">Book a Free Demo</a>
                             </div>
 
                         </div>
@@ -633,27 +657,6 @@
 
                         <!--begin price_item -->
                         <div class="threecol price_item">
-
-                            <div class="price_head">
-                                <h2>Department-Specific Training</h2>
-                                <h4>Contact Us</h4>
-                            </div>
-
-                            <ul class="price_features">
-                                <li>Online/Hybrid</li>
-                                <li>Custom</li>
-                                <li>Tailored training for specific departments</li>
-                            </ul>
-
-                            <div class="price_button_wrapper">
-                                <a href="#" class="price_button">SIGN UP NOW</a>
-                            </div>
-
-                        </div>
-                        <!--end price_item -->
-
-                        <!--begin price_item -->
-                        <div class="threecol last price_item">
 
                             <div class="price_head">
                                 <h2>Corporate Support</h2>
@@ -667,20 +670,41 @@
                             </ul>
 
                             <div class="price_button_wrapper">
-                                <a href="#" class="price_button">SIGN UP NOW</a>
+                                <a href="#" class="price_button">Book a Free Demo</a>
                             </div>
 
                         </div>
-                        <!--end priceitem -->
+                        <!--end price_item -->
+
+                        <!--begin price_item -->
+                        <div class="threecol last price_item">
+
+                            <div class="price_head">
+                                <div class="price_head">
+                                    <h2>Department-Specific Training</h2>
+                                    <h4>Contact Us</h4>
+                                </div>
+
+                                <ul class="price_features">
+                                    <li>Online/Hybrid</li>
+                                    <li>Custom</li>
+                                    <li>Tailored training for specific departments</li>
+                                </ul>
+
+                                <div class="price_button_wrapper">
+                                    <a href="#" class="price_button">Book a Free Demo</a>
+                                </div>
+                            </div>
+                            <!--end priceitem -->
+
+                        </div>
+                        <!--end twelvecol -->
 
                     </div>
-                    <!--end twelvecol -->
+                    <!--end row -->
 
                 </div>
-                <!--end row -->
-
-            </div>
-            <!--end nine_section -->
+                <!--end nine_section -->
         </section>
         <!--end nine_section_wrapper -->
 
@@ -688,7 +712,7 @@
         <div id="subscribe" class="newsletter_wrapper">
             <!--begin info_transparent -->
             <div class="info_transparent bounce_fade">
-                <h3>PLEASE JOIN OUR MAILING LIST TODAY</h3>
+                <h3>Join Our Odoo Expert Series</h3>
                 <h4>We promise we don't spam and won't give this address away.</h4>
             </div>
             <!--end info_transparent -->
@@ -959,6 +983,32 @@
     </script>
 
     <script>
+        $(document).ready(function () {
+            const $nav = $('#nav');
+            const $toggle = $('#mobileToggle');
+
+            // Toggle menu on click
+            $toggle.on('click', function () {
+                $nav.toggleClass('active');
+            });
+
+            // Hide menu on nav item click (mobile only)
+            $('#nav a').on('click', function () {
+                if ($(window).width() <= 768) {
+                    $nav.removeClass('active');
+                }
+            });
+
+            // Reset styles on resize
+            $(window).on('resize', function () {
+                if ($(window).width() > 768) {
+                    $nav.removeClass('active').removeAttr('style');
+                }
+            });
+        });
+    </script>
+
+    <script>
         const swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             loop: true,
@@ -1020,6 +1070,31 @@
                 }
             });
         });
+    </script>
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200; // lower = faster
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = Math.ceil(target / speed);
+
+                    if (count < target) {
+                        counter.innerText = count + increment;
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+        };
+
+        window.addEventListener('load', animateCounters);
     </script>
     <!--end shrink header script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
