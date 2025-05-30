@@ -767,7 +767,7 @@ span.features_title {
 .home_box .left-column,
 .home_box .right-column {
   flex: 1;
-  padding: 20px;
+  /* padding: 20px; */
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -1107,7 +1107,7 @@ span.footer_logo {
   width: 100%;
   position: relative;
   z-index: 10;
-  padding: 50px 0 50px 0;
+  padding: 70px 0 70px 0;
 }
 
 .home_box {
@@ -1310,6 +1310,28 @@ a.services_button:hover {
 /* ========================================================== */
 /* 				  		      Pricing                         */
 /* ========================================================== */
+
+.price-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile default */
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  .price-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1200px) {
+  .price-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 
 .price_item {
   margin-bottom: 50px;
