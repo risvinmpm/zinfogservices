@@ -599,7 +599,7 @@ body {
 
 .nine_section {
   width: 90%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 50px;
@@ -617,7 +617,7 @@ body {
 
 .nine_section2 {
   width: 90%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -806,7 +806,7 @@ span.features_title {
   overflow: hidden;
   padding: 90px 0 0 0;
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   text-align: center;
 }
 
@@ -838,7 +838,7 @@ span.features_title {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 120px;
-  max-width: 1170px;
+  max-width: 1200px;
   text-align: center;
 }
 
@@ -917,7 +917,7 @@ span.features_title {
 
 #header {
   width: 90%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
@@ -1112,7 +1112,7 @@ span.footer_logo {
 
 .home_box {
   width: 90%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   padding-left: 5%;
@@ -1421,7 +1421,7 @@ a.price_button:hover {
 
 .features_box {
   width: 90%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 110px;
   padding-bottom: 100px;
@@ -1526,7 +1526,7 @@ a.price_button:hover {
 
 .newsletter_box {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 0 90px 0;
   text-align: center;
@@ -1909,10 +1909,11 @@ span.testimonials_autor {
 .question {
   /* font-size: 1.2rem; */
   font-weight: 600;
-  padding: 20px 80px 20px 20px;
+  padding: 20px 20px 20px 20px;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: start !important;
+  text-align: start !important;
   cursor: pointer;
 }
 
@@ -1948,7 +1949,7 @@ span.testimonials_autor {
     font-size: 14px;
   }
   .wrapper {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -1958,7 +1959,7 @@ span.testimonials_autor {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 
   .pb {
@@ -2581,7 +2582,7 @@ span.testimonials_autor {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   flex: 1 1 200px;
-  max-width: 250px;
+  max-width: 200px;
   transition: transform 0.3s;
 }
 .counter-box:hover {
@@ -2645,3 +2646,5 @@ span.testimonials_autor {
   #backToTop svg {
     display: block;
   }
+
+  
