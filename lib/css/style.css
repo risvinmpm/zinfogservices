@@ -2605,3 +2605,43 @@ span.testimonials_autor {
     max-width: 100%;
   }
 }
+
+#backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007BFF;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    user-select: none;
+  }
+
+  #backToTop.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* SVG positioning */
+  #progressCircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg); /* start progress from top */
+  }
+
+  /* Center the SVG inside the button */
+  #backToTop svg {
+    display: block;
+  }

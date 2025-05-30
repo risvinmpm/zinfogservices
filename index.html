@@ -608,71 +608,71 @@
             <div class="nine_section up_fade">
 
                 <!--begin row -->
-            <div class="price-section">
-  <div class="price-grid">
+                <div class="price-section">
+                    <div class="price-grid">
 
-    <div class="price_item">
-      <div class="price_head">
-        <h2>Functional Training</h2>
-        <h4>₹20,000–₹80,000</h4>
-      </div>
-      <ul class="price_features">
-        <li>Online / Onsite</li>
-        <li>2–6 weeks</li>
-        <li>Core Odoo modules training</li>
-      </ul>
-      <div class="price_button_wrapper">
-        <a href="#" class="price_button">Book a Free Demo</a>
-      </div>
-    </div>
+                        <div class="price_item">
+                            <div class="price_head">
+                                <h2>Functional Training</h2>
+                                <h4>₹20,000–₹80,000</h4>
+                            </div>
+                            <ul class="price_features">
+                                <li>Online / Onsite</li>
+                                <li>2–6 weeks</li>
+                                <li>Core Odoo modules training</li>
+                            </ul>
+                            <div class="price_button_wrapper">
+                                <a href="#" class="price_button">Book a Free Demo</a>
+                            </div>
+                        </div>
 
-    <div class="price_item">
-      <div class="price_head">
-        <h2>Odoo Online Kickstart</h2>
-        <h4>₹30,000–₹60,000</h4>
-      </div>
-      <ul class="price_features">
-        <li>Online</li>
-        <li>3 weeks</li>
-        <li>Focus on setup, workflows & reporting</li>
-      </ul>
-      <div class="price_button_wrapper">
-        <a href="#" class="price_button">Book a Free Demo</a>
-      </div>
-    </div>
+                        <div class="price_item">
+                            <div class="price_head">
+                                <h2>Odoo Online Kickstart</h2>
+                                <h4>₹30,000–₹60,000</h4>
+                            </div>
+                            <ul class="price_features">
+                                <li>Online</li>
+                                <li>3 weeks</li>
+                                <li>Focus on setup, workflows & reporting</li>
+                            </ul>
+                            <div class="price_button_wrapper">
+                                <a href="#" class="price_button">Book a Free Demo</a>
+                            </div>
+                        </div>
 
-    <div class="price_item">
-      <div class="price_head">
-        <h2>Corporate Support</h2>
-        <h4>₹15,000/month onwards</h4>
-      </div>
-      <ul class="price_features">
-        <li>Ongoing</li>
-        <li>Monthly</li>
-        <li>Dedicated trainer access</li>
-      </ul>
-      <div class="price_button_wrapper">
-        <a href="#" class="price_button">Book a Free Demo</a>
-      </div>
-    </div>
+                        <div class="price_item">
+                            <div class="price_head">
+                                <h2>Corporate Support</h2>
+                                <h4>₹15,000/month onwards</h4>
+                            </div>
+                            <ul class="price_features">
+                                <li>Ongoing</li>
+                                <li>Monthly</li>
+                                <li>Dedicated trainer access</li>
+                            </ul>
+                            <div class="price_button_wrapper">
+                                <a href="#" class="price_button">Book a Free Demo</a>
+                            </div>
+                        </div>
 
-    <div class="price_item">
-      <div class="price_head">
-        <h2>Department-Specific Training</h2>
-        <h4>Contact Us</h4>
-      </div>
-      <ul class="price_features">
-        <li>Online/Hybrid</li>
-        <li>Custom</li>
-        <li>Tailored training for specific departments</li>
-      </ul>
-      <div class="price_button_wrapper">
-        <a href="#" class="price_button">Book a Free Demo</a>
-      </div>
-    </div>
+                        <div class="price_item">
+                            <div class="price_head">
+                                <h2>Department-Specific Training</h2>
+                                <h4>Contact Us</h4>
+                            </div>
+                            <ul class="price_features">
+                                <li>Online/Hybrid</li>
+                                <li>Custom</li>
+                                <li>Tailored training for specific departments</li>
+                            </ul>
+                            <div class="price_button_wrapper">
+                                <a href="#" class="price_button">Book a Free Demo</a>
+                            </div>
+                        </div>
 
-  </div>
-</div>
+                    </div>
+                </div>
 
                 <!--end nine_section -->
         </section>
@@ -936,12 +936,44 @@
     </div>
     <!--! end of #container -->
 
+    
+<!-- Back to Top button with progress SVG -->
+<button id="backToTop" aria-label="Back to top">
+  <svg id="progressCircle" width="60" height="60" viewBox="0 0 60 60" aria-hidden="true">
+    <!-- Background circle (light gray) -->
+    <circle
+      cx="30"
+      cy="30"
+      r="28"
+      stroke="#ddd"
+      stroke-width="4"
+      fill="none"
+    />
+    <!-- Progress circle -->
+    <circle
+      id="progressBar"
+      cx="30"
+      cy="30"
+      r="28"
+      stroke="#007BFF"
+      stroke-width="4"
+      fill="none"
+      stroke-linecap="round"
+      stroke-dasharray="175.93"
+      stroke-dashoffset="175.93"
+    />
+  </svg>
+  ↑
+</button>
+
     <!-- scripts concatenated and minified via ant build script-->
     <script src="lib/js/modernizr-2.6.1.min.js"></script>
     <script src="lib/js/conditional.js"></script>
     <script src="lib/js/script.js"></script>
     <script src="lib/js/jquery.inview.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <!-- begin jquery.sticky script-->
     <script type="text/javascript" src="lib/js/jquery.sticky.js"></script>
     <script>
@@ -1117,6 +1149,42 @@
 
         window.addEventListener('load', animateCounters);
     </script>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTop');
+        const progressBar = document.getElementById('progressBar');
+
+        const radius = 28;
+        const circumference = 2 * Math.PI * radius;
+
+        // Set initial stroke values
+        progressBar.style.strokeDasharray = circumference;
+        progressBar.style.strokeDashoffset = circumference;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+            // Calculate scroll percentage (0 to 1)
+            const scrollPercent = Math.min(scrollTop / scrollHeight, 1);
+
+            // Calculate offset for strokeDashoffset (reverse fill)
+            const draw = circumference * (1 - scrollPercent);
+            progressBar.style.strokeDashoffset = draw;
+
+            // Show button after scrolling 100px
+            if (scrollTop > 100) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
     <!--end shrink header script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
