@@ -1014,9 +1014,13 @@ a.purchase:hover {
   text-align: start;
 }
 
+#footer_left {
+  margin-left: 20%;
+}
+
 #footer_text {
-	width: 50%;
-	color: #b1b2b3;
+  width: 50%;
+  color: #b1b2b3;
 }
 
 #footer a {
@@ -1845,10 +1849,18 @@ span.testimonials_autor {
   .container {
     width: 750px;
   }
-}
 
-.pb {
-  padding-bottom: 50px;
+  #footer_text {
+    width: 100%;
+  }
+
+  .pb {
+    padding-bottom: 50px;
+  }
+
+  #footer_left {
+    margin-left: 0%;
+  }
 }
 
 /* ========================================================== */
@@ -1859,10 +1871,17 @@ span.testimonials_autor {
   .container {
     width: 970px;
   }
-}
 
-.pb {
-  padding-bottom: 50px;
+  #footer_text {
+    width: 100%;
+  }
+
+  .pb {
+    padding-bottom: 50px;
+  }
+  #footer_left {
+    margin-left: 5%;
+  }
 }
 
 .question {
@@ -1919,10 +1938,33 @@ span.testimonials_autor {
   .container {
     width: 1170px;
   }
+
+  .pb {
+    padding-bottom: 100px;
+  }
+
+  #footer_text {
+    width: 70%;
+  }
+
+  #footer_left {
+    margin-left: 10%;
+  }
 }
 
-.pb {
-  padding-bottom: 100px;
+/* ========================================================== */
+/* 						     1600px                           */
+/* ========================================================== */
+
+@media (min-width: 1600px) {
+
+  #footer_text {
+    width: 70%;
+  }
+
+  #footer_left {
+    margin-left: 20%;
+  }
 }
 
 /* ========================================================== */
@@ -2185,6 +2227,14 @@ span.testimonials_autor {
     -moz-border-radius: 16px 16px;
     border-radius: 16px 16px;
   }
+
+  #footer_text {
+    width: 100%;
+  }
+
+  #footer_left {
+	margin-left: 0%;
+}
 }
 
 /* Responsive Navigation
