@@ -3021,3 +3021,7 @@ span.testimonials_autor {
   font-size: 14px;
   color: #fff;
 }
+
+.container-pe-quote img, .box-dpname img {
+	background-size: cover;
+}
